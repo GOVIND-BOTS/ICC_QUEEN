@@ -7,16 +7,16 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "13976276"))
+API_HASH = getenv("API_HASH", "7f024cbc744a2f44569c3641b5ccecb7")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6147420019:AAFx3uR50iN5oww1x0i64SBiMEZs8cY-0Kc")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Zᴇᴅᴢᴇ ✘")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://AbhiModszYT:AbhiModszYT@abhimodszyt.flmdtda.mongodb.net/?retryWrites=true&w=majority")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001848959319"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝗤𝗨𝗘𝗘𝗡 𝗫 𝗠𝗨𝗦𝗜𝗖")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "5604140011").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "6008136265").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -25,14 +25,14 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/team-katil/zedzemusi
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL","https://t.me/katilsupport")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/katil_bots")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL","https://t.me/indian_chatting_club_offical")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/tha_govind_op")
 
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "1000"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "5400")
 )
@@ -75,7 +75,7 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/ff3d94744211c796cf5bb.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/768802245997bf0aba8e0.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
